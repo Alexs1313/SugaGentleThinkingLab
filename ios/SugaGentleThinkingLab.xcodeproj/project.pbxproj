@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-SugaGentleThinkingLab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-SugaGentleThinkingLab.a */; };
+		0E3CEBC873B54F1BBE3CFA3A /* MontserratAlternates-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8151FC5CDF7B49DA94B1CDF1 /* MontserratAlternates-SemiBold.ttf */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2FC13BD6B99462F75E5CA9C4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		393A15D9DEA44267975D821C /* MontserratAlternates-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A19A6DB57BE545F988B21B51 /* MontserratAlternates-Bold.ttf */; };
+		51C0E249019747E69D020139 /* MontserratAlternates-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F25CEEFC9DDF434290725F00 /* MontserratAlternates-Black.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		ABDF7DBDAEBA4B64AFDC4315 /* MontserratAlternates-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14BA241727F24259BFDFE061 /* MontserratAlternates-Medium.ttf */; };
+		D15955182F9F369C00CC98A9 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15955172F9F369C00CC98A9 /* AVKit.framework */; };
+		D159551A2F9F36A200CC98A9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15955192F9F36A200CC98A9 /* AVFoundation.framework */; };
+		D159551C2F9F36A800CC98A9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D159551B2F9F36A800CC98A9 /* AudioToolbox.framework */; };
+		D159551E2F9F385B00CC98A9 /* dmassaiii-funlit-path-242236.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D159551D2F9F385B00CC98A9 /* dmassaiii-funlit-path-242236.mp3 */; };
+		D5BEC88D12054D61875080BC /* MontserratAlternates-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D79DF127CFDB44F496F4691C /* MontserratAlternates-ExtraBold.ttf */; };
+		FE1B9958336442F59F53DE09 /* MontserratAlternates-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60A2903371384826B51E1434 /* MontserratAlternates-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,12 +29,22 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SugaGentleThinkingLab/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SugaGentleThinkingLab/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = SugaGentleThinkingLab/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		14BA241727F24259BFDFE061 /* MontserratAlternates-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MontserratAlternates-Medium.ttf"; path = "../assets/f/MontserratAlternates-Medium.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-SugaGentleThinkingLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugaGentleThinkingLab.debug.xcconfig"; path = "Target Support Files/Pods-SugaGentleThinkingLab/Pods-SugaGentleThinkingLab.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-SugaGentleThinkingLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugaGentleThinkingLab.release.xcconfig"; path = "Target Support Files/Pods-SugaGentleThinkingLab/Pods-SugaGentleThinkingLab.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-SugaGentleThinkingLab.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SugaGentleThinkingLab.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A2903371384826B51E1434 /* MontserratAlternates-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MontserratAlternates-Regular.ttf"; path = "../assets/f/MontserratAlternates-Regular.ttf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SugaGentleThinkingLab/AppDelegate.swift; sourceTree = "<group>"; };
+		8151FC5CDF7B49DA94B1CDF1 /* MontserratAlternates-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MontserratAlternates-SemiBold.ttf"; path = "../assets/f/MontserratAlternates-SemiBold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SugaGentleThinkingLab/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A19A6DB57BE545F988B21B51 /* MontserratAlternates-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MontserratAlternates-Bold.ttf"; path = "../assets/f/MontserratAlternates-Bold.ttf"; sourceTree = "<group>"; };
+		D15955172F9F369C00CC98A9 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		D15955192F9F36A200CC98A9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D159551B2F9F36A800CC98A9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D159551D2F9F385B00CC98A9 /* dmassaiii-funlit-path-242236.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dmassaiii-funlit-path-242236.mp3"; sourceTree = "<group>"; };
+		D79DF127CFDB44F496F4691C /* MontserratAlternates-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MontserratAlternates-ExtraBold.ttf"; path = "../assets/f/MontserratAlternates-ExtraBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F25CEEFC9DDF434290725F00 /* MontserratAlternates-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MontserratAlternates-Black.ttf"; path = "../assets/f/MontserratAlternates-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D159551C2F9F36A800CC98A9 /* AudioToolbox.framework in Frameworks */,
+				D159551A2F9F36A200CC98A9 /* AVFoundation.framework in Frameworks */,
+				D15955182F9F369C00CC98A9 /* AVKit.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-SugaGentleThinkingLab.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,10 +77,27 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D159551B2F9F36A800CC98A9 /* AudioToolbox.framework */,
+				D15955192F9F36A200CC98A9 /* AVFoundation.framework */,
+				D15955172F9F369C00CC98A9 /* AVKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-SugaGentleThinkingLab.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FFB9F2E1C0840F3861CD6BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A19A6DB57BE545F988B21B51 /* MontserratAlternates-Bold.ttf */,
+				F25CEEFC9DDF434290725F00 /* MontserratAlternates-Black.ttf */,
+				14BA241727F24259BFDFE061 /* MontserratAlternates-Medium.ttf */,
+				60A2903371384826B51E1434 /* MontserratAlternates-Regular.ttf */,
+				8151FC5CDF7B49DA94B1CDF1 /* MontserratAlternates-SemiBold.ttf */,
+				D79DF127CFDB44F496F4691C /* MontserratAlternates-ExtraBold.ttf */,
+				D159551D2F9F385B00CC98A9 /* dmassaiii-funlit-path-242236.mp3 */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -75,6 +115,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				5FFB9F2E1C0840F3861CD6BE /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -160,7 +201,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				D159551E2F9F385B00CC98A9 /* dmassaiii-funlit-path-242236.mp3 in Resources */,
 				2FC13BD6B99462F75E5CA9C4 /* PrivacyInfo.xcprivacy in Resources */,
+				393A15D9DEA44267975D821C /* MontserratAlternates-Bold.ttf in Resources */,
+				51C0E249019747E69D020139 /* MontserratAlternates-Black.ttf in Resources */,
+				ABDF7DBDAEBA4B64AFDC4315 /* MontserratAlternates-Medium.ttf in Resources */,
+				FE1B9958336442F59F53DE09 /* MontserratAlternates-Regular.ttf in Resources */,
+				0E3CEBC873B54F1BBE3CFA3A /* MontserratAlternates-SemiBold.ttf in Resources */,
+				D5BEC88D12054D61875080BC /* MontserratAlternates-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,9 +239,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SugaGentleThinkingLab/Pods-SugaGentleThinkingLab-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SugaGentleThinkingLab/Pods-SugaGentleThinkingLab-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -230,9 +282,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SugaGentleThinkingLab/Pods-SugaGentleThinkingLab-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SugaGentleThinkingLab/Pods-SugaGentleThinkingLab-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -273,7 +329,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghjdls.khjuqqw;
 				PRODUCT_NAME = SugaGentleThinkingLab;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -300,7 +356,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghjdls.khjuqqw;
 				PRODUCT_NAME = SugaGentleThinkingLab;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -376,10 +432,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -448,10 +501,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
