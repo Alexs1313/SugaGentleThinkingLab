@@ -1,4 +1,4 @@
-package com.sugagentlethinkinglab
+package com.suga.lab.mind.focus
 
 import android.app.Application
 import com.facebook.react.PackageList

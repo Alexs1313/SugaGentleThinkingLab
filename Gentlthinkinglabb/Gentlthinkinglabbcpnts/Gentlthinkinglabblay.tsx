@@ -1,16 +1,19 @@
-import {ImageBackground, ScrollView, StyleSheet} from 'react-native';
+import {ScrollView, StyleSheet} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 const Gentlthinkinglabblay = ({children}) => {
   return (
-    <ImageBackground
+    <LinearGradient
+      colors={['#DD00FF', '#8886F9']}
       style={styles.gwntlthinkinlabbbackground}
-      source={require('../../assets/i/gentlthinkinglabbbg.png')}>
+      start={{x: 0, y: 0.4}}
+      end={{x: 1.2, y: 0}}>
       <ScrollView
         contentContainerStyle={styles.gwntlthinkinlabbcontent}
         showsVerticalScrollIndicator={false}>
         {children}
       </ScrollView>
-    </ImageBackground>
+    </LinearGradient>
   );
 };
 

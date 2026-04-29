@@ -10,69 +10,56 @@ av.addListener(() => {
   return;
 });
 
-export const gentlthinkinglabbhtmlLoader = `<!DOCTYPE html>
+export const gentlthinkinglabbhtmlLoader = `  <!DOCTYPE html>
     <html>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <style>
-          html, body {
+          body {
             margin: 0;
             padding: 0;
             background: transparent;
-            width: 100%;
-            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             overflow: hidden;
           }
 
-          body {
+          .spinner {
+            background-image: linear-gradient(rgb(186, 66, 255) 35%, rgb(0, 225, 255));
+            width: 100px;
+            height: 100px;
+            animation: spinning 1.7s linear infinite;
+            border-radius: 50%;
+            filter: blur(1px);
+            box-shadow: 
+              0px -5px 20px rgb(186, 66, 255),
+              0px 5px 20px rgb(0, 225, 255);
             display: flex;
             justify-content: center;
             align-items: center;
           }
 
-          .loader {
-            width: 44.8px;
-            height: 44.8px;
-            color: #554cb5;
-            position: relative;
-            background: radial-gradient(11.2px, currentColor 94%, #0000);
-          }
-
-          .loader:before {
-            content: '';
-            position: absolute;
-            inset: 0;
+          .spinner1 {
+            background-color: rgb(36, 36, 36);
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
-            background:
-              radial-gradient(10.08px at bottom right, #0000 94%, currentColor) top left,
-              radial-gradient(10.08px at bottom left, #0000 94%, currentColor) top right,
-              radial-gradient(10.08px at top right, #0000 94%, currentColor) bottom left,
-              radial-gradient(10.08px at top left, #0000 94%, currentColor) bottom right;
-            background-size: 22.4px 22.4px;
-            background-repeat: no-repeat;
-            animation: loader 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+            filter: blur(10px);
           }
 
-          @keyframes loader {
-            33% {
-              inset: -11.2px;
-              transform: rotate(0deg);
-            }
-
-            66% {
-              inset: -11.2px;
-              transform: rotate(90deg);
-            }
-
-            100% {
-              inset: 0;
-              transform: rotate(90deg);
+          @keyframes spinning {
+            to {
+              transform: rotate(360deg);
             }
           }
         </style>
       </head>
       <body>
-        <div class="loader"></div>
+        <div class="spinner">
+          <div class="spinner1"></div>
+        </div>
       </body>
     </html>`;
 

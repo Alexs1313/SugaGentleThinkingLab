@@ -1,4 +1,4 @@
-package com.sugagentlethinkinglab
+package com.suga.lab.mind.focus
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
