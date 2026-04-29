@@ -12,6 +12,8 @@ import {
   Share,
   Modal,
   Vibration,
+  Platform,
+  ScrollView,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -279,56 +281,67 @@ const Gentlthinkinglabbfindpar = () => {
       <Modal
         visible={gentlthinkinglabbState === 'complete'}
         animationType="fade"
+        statusBarTranslucent={Platform.OS === 'android'}
         transparent={true}
         onRequestClose={gentlthinkinglabbClose}>
         <View style={styles.gentlthinkinglabboverlay}>
-          <View style={styles.gentlthinkinglabbcompcard}>
-            <Text style={styles.gentlthinkinglabbcomptitle}>
-              ROUND COMPLETED
-            </Text>
-
-            <View style={styles.gentlthinkinglabbcompbadge}>
-              <Text style={styles.gentlthinkinglabbcompbadgetxt}>
-                Round: {gentlthinkinglabbRound}
+          <ScrollView
+            contentContainerStyle={{
+              paddingHorizontal: 16,
+              justifyContent: 'center',
+              alignItems: 'center',
+              flexGrow: 1,
+              padding: 20,
+            }}
+            showsVerticalScrollIndicator={false}>
+            <View style={styles.gentlthinkinglabbcompcard}>
+              <Text style={styles.gentlthinkinglabbcomptitle}>
+                ROUND COMPLETED
               </Text>
-            </View>
 
-            <View style={styles.gentlthinkinglabbimgrow}>
-              {GENTLTHINKINGLABB_IMGS.map((src, i) => (
+              <View style={styles.gentlthinkinglabbcompbadge}>
+                <Text style={styles.gentlthinkinglabbcompbadgetxt}>
+                  Round: {gentlthinkinglabbRound}
+                </Text>
+              </View>
+
+              <View style={styles.gentlthinkinglabbimgrow}>
+                {GENTLTHINKINGLABB_IMGS.map((src, i) => (
+                  <Image
+                    key={i}
+                    source={src}
+                    style={styles.gentlthinkinglabbcompimg}
+                    resizeMode="contain"
+                  />
+                ))}
+              </View>
+
+              <TouchableOpacity
+                activeOpacity={0.7}
+                style={styles.gentlthinkinglabbcompbtn}
+                onPress={gentlthinkinglabbShare}>
+                <Text style={styles.gentlthinkinglabbbtntxt}>SHARE</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                activeOpacity={0.7}
+                style={styles.gentlthinkinglabbcompbtn}
+                onPress={gentlthinkinglabbContinue}>
+                <Text style={styles.gentlthinkinglabbbtntxt}>CONTINUE</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                activeOpacity={0.7}
+                style={styles.gentlthinkinglabbclosebtn}
+                onPress={gentlthinkinglabbClose}>
                 <Image
-                  key={i}
-                  source={src}
-                  style={styles.gentlthinkinglabbcompimg}
-                  resizeMode="contain"
+                  source={require('../../assets/i/gentlthinkincls.png')}
+                  style={styles.gentlthinkinglabbcloseicon}
                 />
-              ))}
+                <Text style={styles.gentlthinkinglabbclosetxt}>Close</Text>
+              </TouchableOpacity>
             </View>
-
-            <TouchableOpacity
-              activeOpacity={0.7}
-              style={styles.gentlthinkinglabbcompbtn}
-              onPress={gentlthinkinglabbShare}>
-              <Text style={styles.gentlthinkinglabbbtntxt}>SHARE</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              activeOpacity={0.7}
-              style={styles.gentlthinkinglabbcompbtn}
-              onPress={gentlthinkinglabbContinue}>
-              <Text style={styles.gentlthinkinglabbbtntxt}>CONTINUE</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              activeOpacity={0.7}
-              style={styles.gentlthinkinglabbclosebtn}
-              onPress={gentlthinkinglabbClose}>
-              <Image
-                source={require('../../assets/i/gentlthinkincls.png')}
-                style={styles.gentlthinkinglabbcloseicon}
-              />
-              <Text style={styles.gentlthinkinglabbclosetxt}>Close</Text>
-            </TouchableOpacity>
-          </View>
+          </ScrollView>
         </View>
       </Modal>
     </>
@@ -462,11 +475,9 @@ const styles = StyleSheet.create({
     color: '#DD00FF',
   },
   gentlthinkinglabboverlay: {
-    flex: 1,
     backgroundColor: 'rgba(80, 60, 160, 0.55)',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingHorizontal: 16,
   },
   gentlthinkinglabbcompcard: {
     backgroundColor: '#8886F9',

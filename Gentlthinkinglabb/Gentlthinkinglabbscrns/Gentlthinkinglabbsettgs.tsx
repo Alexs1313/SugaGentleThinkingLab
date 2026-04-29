@@ -3,7 +3,14 @@ import {useStore} from '../Gentlthinkinglabbstor/Gentlthinkinglabbcontxt';
 
 import React from 'react';
 
-import {View, Text, TouchableOpacity, StyleSheet, Linking} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  Linking,
+  Platform,
+} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Gentlthinkinglabbsettgs = () => {
@@ -54,46 +61,51 @@ const Gentlthinkinglabbsettgs = () => {
         <Text style={styles.gentlthinkinglabbtitle}>Settings</Text>
 
         <View style={styles.gentlthinkinglabbcard}>
-          <View style={styles.gentlthinkinglabbrow}>
-            <Text style={styles.gentlthinkinglabbrowlbl}>Music:</Text>
-            <TouchableOpacity
-              activeOpacity={0.7}
-              onPress={() =>
-                gentlthinkinglabbToggleBackgroundMusic(
-                  !gentlthinkinglabbBackgroundMusic,
-                )
-              }
-              style={{
-                width: 76,
-                height: 47,
-                backgroundColor: '#FFFFFF',
-                borderRadius: 16,
-                padding: 11,
-                justifyContent: 'center',
-                alignItems: !gentlthinkinglabbBackgroundMusic
-                  ? 'flex-start'
-                  : 'flex-end',
-              }}>
-              <View
-                style={[
-                  gentlthinkinglabbBackgroundMusic
-                    ? {
-                        width: 23,
-                        height: 23,
-                        backgroundColor: '#DD00FF',
-                        borderRadius: 11.5,
-                      }
-                    : {
-                        width: 23,
-                        height: 23,
-                        backgroundColor: '#8886F9',
-                        borderRadius: 11.5,
-                      },
-                ]}
-              />
-            </TouchableOpacity>
-          </View>
-          <View style={styles.gentlthinkinglabbdivider} />
+          {Platform.OS === 'ios' && (
+            <View style={styles.gentlthinkinglabbrow}>
+              <Text style={styles.gentlthinkinglabbrowlbl}>Music:</Text>
+              <TouchableOpacity
+                activeOpacity={0.7}
+                onPress={() =>
+                  gentlthinkinglabbToggleBackgroundMusic(
+                    !gentlthinkinglabbBackgroundMusic,
+                  )
+                }
+                style={{
+                  width: 76,
+                  height: 47,
+                  backgroundColor: '#FFFFFF',
+                  borderRadius: 16,
+                  padding: 11,
+                  justifyContent: 'center',
+                  alignItems: !gentlthinkinglabbBackgroundMusic
+                    ? 'flex-start'
+                    : 'flex-end',
+                }}>
+                <View
+                  style={[
+                    gentlthinkinglabbBackgroundMusic
+                      ? {
+                          width: 23,
+                          height: 23,
+                          backgroundColor: '#DD00FF',
+                          borderRadius: 11.5,
+                        }
+                      : {
+                          width: 23,
+                          height: 23,
+                          backgroundColor: '#8886F9',
+                          borderRadius: 11.5,
+                        },
+                  ]}
+                />
+              </TouchableOpacity>
+            </View>
+          )}
+          {Platform.OS === 'ios' && (
+            <View style={styles.gentlthinkinglabbdivider} />
+          )}
+
           <View style={styles.gentlthinkinglabbrow}>
             <Text style={styles.gentlthinkinglabbrowlbl}>Vibration:</Text>
             <TouchableOpacity
@@ -140,12 +152,14 @@ const Gentlthinkinglabbsettgs = () => {
               'This app combines short stories, situations, and simple interactive elements.\nIt is designed to give a new perspective on familiar things and stimulate thinking in a light format.'
             }
           </Text>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={styles.gentlthinkinglabbsharebtn}
-            onPress={gentlthinkinglabbShareApp}>
-            <Text style={styles.gentlthinkinglabbsharetxt}>SHARE APP</Text>
-          </TouchableOpacity>
+          {Platform.OS === 'ios' && (
+            <TouchableOpacity
+              activeOpacity={0.7}
+              style={styles.gentlthinkinglabbsharebtn}
+              onPress={gentlthinkinglabbShareApp}>
+              <Text style={styles.gentlthinkinglabbsharetxt}>SHARE APP</Text>
+            </TouchableOpacity>
+          )}
         </View>
       </View>
     </Gentlthinkinglabblay>

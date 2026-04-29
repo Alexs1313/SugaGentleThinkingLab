@@ -9,6 +9,7 @@ import {
   StyleSheet,
   Modal,
   ScrollView,
+  Platform,
 } from 'react-native';
 
 type GentlthinkinglabbQuestion = {
@@ -253,6 +254,7 @@ const Gentlthinkinglabbqkchoce = () => {
 
       <Modal
         animationType="fade"
+        statusBarTranslucent={Platform.OS === 'android'}
         visible={gentlthinkinglabbAnswer !== null}
         transparent={true}
         onRequestClose={gentlthinkinglabbReset}>

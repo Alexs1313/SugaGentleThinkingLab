@@ -13,6 +13,7 @@ import {
   Share,
   Modal,
   ScrollView,
+  Platform,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Gentlthinkinglabblay from '../Gentlthinkinglabbcpnts/Gentlthinkinglabblay';
@@ -332,6 +333,7 @@ const Gentlthinkinglabbstries = () => {
         visible={!!gentlthinkinglabbSelectedStory}
         animationType="fade"
         transparent={true}
+        statusBarTranslucent={Platform.OS === 'android'}
         onRequestClose={() => setGentlthinkinglabbSelected(null)}>
         <View style={{flex: 1, backgroundColor: 'rgba(0, 0, 0, 0.224)'}}>
           <ScrollView
