@@ -291,7 +291,7 @@ const Gentlthinkinglabbfindpar = () => {
               justifyContent: 'center',
               alignItems: 'center',
               flexGrow: 1,
-              padding: 20,
+              padding: 25,
             }}
             showsVerticalScrollIndicator={false}>
             <View style={styles.gentlthinkinglabbcompcard}>
